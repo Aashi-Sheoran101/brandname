@@ -1,38 +1,111 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  list-style-type: none !important;
+  box-sizing: border-box !important;
+  text-decoration: none !important;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.ff_Montserrat {
+  font-family: 'Montserrat', sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.my_container {
+  max-width: 1050px !important;
+  padding-left: 12px !important;
+  padding-right: 12px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.transition03 {
+  transition: all 0.3s linear;
+}
+
+/* ===============COURSES================ */
+
+.course_card {
   display: flex;
+  padding: 35px 40px;
   flex-direction: column;
+  max-width: 329px;
   align-items: center;
+  gap: 20px;
+  align-self: stretch;
+  background: var(--light-background-color, #FFF);
+  box-shadow: 0px 13px 19px 0px rgba(0, 0, 0, 0.07);
+  transition: all 0.3s linear;
+}
+
+.course_card:hover {
+  box-shadow: 0px 0px 10px 0px #E74040;
+}
+
+.mx_auto {
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+/* ===================CLIENT================ */
+.svg_border {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  padding: 10px;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  border-radius: 44.786px;
+  background: var(--light-background-color, #FFF);
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+.star_bg {
+  display: flex;
+  padding: 5px;
+  align-items: center;
+  gap: 5px;
+  border-radius: 20px;
+  background: var(--dark-background-color, #2D4059);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.client_card {
+  display: flex;
+  padding: 25px 25px 35px 25px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  align-self: stretch;
+}
+
+.btn_more {
+  display: flex;
+  padding: 10px 20px;
+  align-items: center;
+  gap: 10px;
+  border-radius: 37px;
+  border: 1px solid var(--primary-color, #96BB7C);
+}
+
+
+
+.heart_hover:hover .path {
+  stroke: red;
+  transition: all 0.3s linear;
+}
+
+/*  */
+
+@media (min-width:768px) {
+  .mx_auto {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
   }
-  to {
-    transform: rotate(360deg);
+}
+
+@media (max-width:768px) {
+  .mt_30 {
+    margin-top: 30px;
   }
 }
